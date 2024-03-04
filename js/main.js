@@ -37,7 +37,7 @@ containerTeam = document.getElementById('container_team_card');
 //creo l'elemento della dom che card le card
 let memberCardRow = document.createElement('div');
 //aggiungo le classi di boostarp
-memberCardRow.classList.add('row', 'row-cols-1', 'row-cols-md-3', 'g-4');
+memberCardRow.classList.add('row', 'row-cols-1', 'row-cols-sm-2', 'row-cols-md-3', 'g-4');
 //aggiungo il contenitore delle card alla dom 
 containerTeam.appendChild(memberCardRow);
 
@@ -56,9 +56,9 @@ for (let key in team) {
 
   //aiiungo il contenuto della card
   memberCard.innerHTML = `
-    <div class="card">
+    <div class="card" style="border: none;">
       <img src="./img/${teamMember.image}" class="card-img-top" alt="...">
-      <div class="card-body">
+      <div class="card-body" style="color: rgb(110, 79, 2);">
         <h5 class="card-title text-center">${teamMember.name}</h5>
         <p class="card-text text-center">${teamMember.name}</p>
       </div>
